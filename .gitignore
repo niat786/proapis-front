@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/front-website
 /.pnp
 .pnp.js
 .yarn/install-state.gz

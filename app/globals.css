@@ -2,32 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+    font-family: 'Geist';
+    src: url('/fonts/Geist-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+    font-family: 'Geist';
+    src: url('/fonts/Geist-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+    font-family: 'Geist';
+    src: url('/fonts/Geist-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+    font-family: 'Geist';
+    src: url('/fonts/Geist-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GeistMono';
+    src: url('/fonts/GeistMono-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.swiper-pagination-bullet{
+    @apply !bg-gray-200 dark:!bg-gray-700 !opacity-100;
+}
+
+.swiper-pagination-bullet-active{
+    @apply !bg-gray-950 dark:!bg-white;
+}
+.privacy-content p{
+    @apply p-1 text-gray-700 dark:text-gray-300;
+}
+.privacy-content h2{
+    @apply font-semibold text-3xl mt-10 mb-5 text-gray-700 dark:text-gray-300 sm:block;
+}
+.privacy-content h3{
+    @apply font-semibold text-2xl mt-10 mb-5 text-gray-700 dark:text-gray-300 sm:block;
+}
+.privacy-content h4{
+    @apply font-semibold text-xl mt-10 mb-5 text-gray-700 dark:text-gray-300 sm:block;
+}
+
+@keyframes loop {
+    to {
+        offset-distance: 100%;
+    }
 }

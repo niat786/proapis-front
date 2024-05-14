@@ -1,0 +1,10 @@
+.tab-content {
+    display: none;
+    min-height: 505px;
+}
+
+.code-container {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+}
