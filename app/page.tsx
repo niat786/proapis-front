@@ -4,9 +4,9 @@ import "./custom-css.css";
 import { useEffect } from 'react';
 import Swiper from 'swiper/bundle';
 import { Pagination } from 'swiper/modules';
-import 'swiper/css/bundle';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-cards';
+// import 'swiper/css/bundle';
+// import 'swiper/css/pagination';
+// import 'swiper/css/effect-cards';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 
@@ -16,39 +16,62 @@ import Header from "./components/Header";
 
 export default function Home() {
   useEffect(() => {
-    const swiper = new Swiper('.proofSlides', {
-      effect: 'cube',
-      cubeEffect: {
-        slideShadows: false,
-        shadow: false,
-        shadowOffset: 20,
-        shadowScale: 0.94,
-      },
-      loop: true,
-      autoplay: {
-        delay: 3000,
-        // duration: 500,
-      },
-      grabCursor: true,
-      modules: [Pagination],
-      centeredSlides: true,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
+    // const swiper = new Swiper('.proofSlides', {
+    //   effect: 'cube',
+    //   cubeEffect: {
+    //     slideShadows: false,
+    //     shadow: false,
+    //     shadowOffset: 20,
+    //     shadowScale: 0.94,
+    //   },
+    //   loop: true,
+    //   autoplay: {
+    //     delay: 3000,
+    //     // duration: 500,
+    //   },
+    //   grabCursor: true,
+    //   modules: [Pagination],
+    //   centeredSlides: true,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //   },
+    // });
 
     
     const tabButtons = document.querySelectorAll('.tab-button') as NodeListOf<HTMLButtonElement>;
     const tabContents = document.querySelectorAll('.tab-content') as NodeListOf<HTMLElement>;
     tabContents[1].style.display = 'block';
+    tabButtons[1].classList.add('bg-gray-800');
+    tabButtons[1].classList.add('text-white');
+    tabButtons[1].classList.add('dark:bg-white');
+    tabButtons[1].classList.add('dark:text-gray-800');
+    
     tabButtons.forEach((button) => {
+
+
       button.addEventListener('click', () => {
         const target = button.getAttribute('data-target');
+        
         tabContents.forEach((content) => {
+
           if (content.id === target) {
             content.style.display = 'block';
+
+            tabButtons.forEach((button)=>{
+                button.classList.remove('bg-gray-800');
+                button.classList.remove('text-white');
+                button.classList.remove('dark:bg-white');
+                button.classList.remove('dark:text-gray-800');
+                })
+
+                button.classList.add('bg-gray-800');
+                button.classList.add('text-white');
+                button.classList.add('dark:bg-white');
+                button.classList.add('dark:text-gray-800');
           } else {
             content.style.display = 'none';
+            
+            
           }
         });
       });
@@ -201,7 +224,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div
-                            className="overflow-hidden lg:col-span-3 border bg-white dark:bg-[--card-dark-bg] rounded-3xl border-gray-300  dark:border-gray-600">
+                            className="overflow-hidden lg:col-span-3 border bg-gray-50 dark:bg-gray-900 rounded-3xl border-gray-200 shadow-sm dark:shadow-xl  dark:border-gray-800">
                             <div className="flex gap-2 py-6 *:size-2.5 *:rounded-full px-10">
                                 <div className="bg-[#f87171]"></div>
                                 <div className="bg-[#fbbf24]"></div>
@@ -210,7 +233,7 @@ export default function Home() {
 
                             {/* icons tabs start */}
                             <div
-                                className="flex gap-3 px-10 text-gray-600 dark:text-gray-400 *:aspect-square *:border *:p-4 *:rounded-full *:border-gray-300  dark:*:border-gray-500">
+                                className="flex gap-3 px-10 text-gray-600 dark:text-gray-300 *:aspect-square *:border *:p-4 *:rounded-full *:border-gray-300  dark:*:border-gray-500">
                                 <div data-target="tab1" className="tab-button">
                                     <svg className="size-7" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                          width="1em" height="1em"
@@ -240,9 +263,10 @@ export default function Home() {
                                         </g>
 
                                     </svg>
+
                                 </div>
                                 <div data-target="tab2" 
-                                    className="bg-gray-800 tab-button text-white dark:bg-white dark:text-gray-800">
+                                    className=" tab-button ">
                                     <svg className="size-7" fill="currentColor" width="1.53em" height="1em"
                                         viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -263,7 +287,7 @@ export default function Home() {
 
                                 </div>
                                 <div data-target="tab4" className="tab-button">
-                                    <svg className="size-7" width="1em" height="1em" viewBox="8 3 24 24"
+                                    {/* <svg className="size-7" width="1em" height="1em" viewBox="8 3 24 24"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path 
                                             d="M18.1177 14.0442C17.7408 14.1497 17.3586 14.2566 16.9162 14.3768C16.7001 14.438 16.6509 14.4519 16.4498 14.2074C16.2086 13.9194 16.0317 13.7331 15.6939 13.5636C14.6807 13.0384 13.6996 13.1909 12.7829 13.8178C11.6893 14.5632 11.1264 15.6644 11.1425 17.0367C11.1585 18.3921 12.0431 19.5103 13.3137 19.6966C14.4073 19.8491 15.324 19.4425 16.0477 18.5785C16.1924 18.3922 16.3212 18.1887 16.482 17.9516H13.378C13.0402 17.9516 12.9598 17.7314 13.0724 17.4433C13.2815 16.9181 13.6675 16.0372 13.8926 15.5967C13.9409 15.495 14.0535 15.3256 14.2947 15.3256H19.4702C19.7027 14.5496 20.0799 13.8164 20.5831 13.1226C21.7572 11.4961 23.1725 10.649 25.0863 10.2933C26.7268 9.9883 28.2707 10.1577 29.6699 11.1573C30.9405 12.0722 31.7285 13.3089 31.9376 14.9354C32.211 17.2225 31.5838 19.0862 30.0881 20.6787C29.0266 21.8138 27.7239 22.5254 26.2282 22.8473C25.9429 22.9029 25.6576 22.9293 25.3768 22.9553C25.2303 22.9689 25.085 22.9823 24.9416 22.9998C23.478 22.9659 22.1432 22.5254 21.0173 21.5089C20.2256 20.7879 19.6803 19.9019 19.4092 18.8705C19.2211 19.2707 18.9962 19.6539 18.7336 20.0185C17.5756 21.628 16.0638 22.6276 14.15 22.8987C12.5738 23.1189 11.1103 22.797 9.82366 21.7805C8.63353 20.8317 7.95805 19.578 7.78114 18.0194C7.57206 16.1727 8.08671 14.5124 9.14818 13.0554C10.2901 11.4798 11.8019 10.4802 13.6514 10.1244C15.1632 9.8364 16.6106 10.0228 17.9134 10.9546C18.7657 11.5475 19.3769 12.3608 19.779 13.3434C19.8755 13.4959 19.8111 13.5806 19.6181 13.6314C19.0545 13.7822 18.5903 13.9121 18.1177 14.0442ZM28.7581 15.974C28.7613 16.0309 28.7646 16.0909 28.7693 16.1552C28.6889 17.6122 27.9973 18.6965 26.7268 19.3911C25.8744 19.8485 24.9898 19.8994 24.1053 19.4928C22.9473 18.9506 22.3361 17.6122 22.6256 16.2907C22.9795 14.6982 23.9444 13.6986 25.4401 13.3428C26.968 12.9701 28.4316 13.9188 28.7211 15.5961C28.7438 15.7161 28.7505 15.836 28.7581 15.974Z"
@@ -277,7 +301,8 @@ export default function Home() {
                                         <path
                                             d="M3.90813 16.9521C3.87596 17.0029 3.89204 17.0537 3.95638 17.0537L6.43019 17.0707C6.47843 17.0707 6.54277 17.0199 6.54277 16.9521L6.57493 16.5455C6.57493 16.4777 6.54277 16.4269 6.47843 16.4269H4.29412C4.22978 16.4269 4.16545 16.4777 4.13329 16.5285L3.90813 16.9521Z"
                                             fill="#00ACD7" />
-                                    </svg>
+                                    </svg> */}
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="size-7" width="1em" height="1em"  viewBox="0 0 640 512" fill="currentColor"><path d="M400.1 194.8C389.2 197.6 380.2 199.1 371 202.4C363.7 204.3 356.3 206.3 347.8 208.5L347.2 208.6C343 209.8 342.6 209.9 338.7 205.4C334 200.1 330.6 196.7 324.1 193.5C304.4 183.9 285.4 186.7 267.7 198.2C246.5 211.9 235.6 232.2 235.9 257.4C236.2 282.4 253.3 302.9 277.1 306.3C299.1 309.1 316.9 301.7 330.9 285.8C333 283.2 334.9 280.5 337 277.5V277.5L337 277.5C337.8 276.5 338.5 275.4 339.3 274.2H279.2C272.7 274.2 271.1 270.2 273.3 264.9C277.3 255.2 284.8 239 289.2 230.9C290.1 229.1 292.3 225.1 296.1 225.1H397.2C401.7 211.7 409 198.2 418.8 185.4C441.5 155.5 468.1 139.9 506 133.4C537.8 127.8 567.7 130.9 594.9 149.3C619.5 166.1 634.7 188.9 638.8 218.8C644.1 260.9 631.9 295.1 602.1 324.4C582.4 345.3 557.2 358.4 528.2 364.3C522.6 365.3 517.1 365.8 511.7 366.3C508.8 366.5 506 366.8 503.2 367.1C474.9 366.5 449 358.4 427.2 339.7C411.9 326.4 401.3 310.1 396.1 291.2C392.4 298.5 388.1 305.6 382.1 312.3C360.5 341.9 331.2 360.3 294.2 365.2C263.6 369.3 235.3 363.4 210.3 344.7C187.3 327.2 174.2 304.2 170.8 275.5C166.7 241.5 176.7 210.1 197.2 184.2C219.4 155.2 248.7 136.8 284.5 130.3C313.8 124.1 341.8 128.4 367.1 145.6C383.6 156.5 395.4 171.4 403.2 189.5C405.1 192.3 403.8 193.9 400.1 194.8zM48.3 200.4C47.1 200.4 46.7 199.8 47.4 198.8L53.9 190.4C54.5 189.5 56.1 188.9 57.3 188.9H168.6C169.8 188.9 170.1 189.8 169.5 190.7L164.2 198.8C163.6 199.8 162 200.7 161.1 200.7L48.3 200.4zM1.2 229.1C0 229.1-.3 228.4 .3 227.5L6.9 219.1C7.5 218.2 9 217.5 10.3 217.5H152.4C153.6 217.5 154.2 218.5 153.9 219.4L151.4 226.9C151.1 228.1 149.9 228.8 148.6 228.8L1.2 229.1zM75.7 255.9C75.1 256.8 75.4 257.7 76.7 257.7L144.6 258C145.5 258 146.8 257.1 146.8 255.9L147.4 248.4C147.4 247.1 146.8 246.2 145.5 246.2H83.2C82 246.2 80.7 247.1 80.1 248.1L75.7 255.9zM577.2 237.9C577 235.3 576.9 233.1 576.5 230.9C570.9 200.1 542.5 182.6 512.9 189.5C483.9 196 465.2 214.4 458.4 243.7C452.8 268 464.6 292.6 487 302.6C504.2 310.1 521.3 309.2 537.8 300.7C562.4 287.1 575.8 268 577.4 241.2C577.3 240 577.3 238.9 577.2 237.9z"/></svg>
                                 </div>
                             </div>
                             {/* icon tabs end */}
@@ -285,8 +310,9 @@ export default function Home() {
                                 <div id="tab1" className="tab-content">
                                     {/* tab content here */}
                                     <pre className="px-10">
-                                        <code className="text-sm font-mono code-container">
+                                        <code className="text-sm font-mono code-container dark:text-gray-300">
                                         {`
+
 const payload = { 
     field: 'value' 
 };
@@ -315,8 +341,10 @@ fetch('https://api.proapis.com/api/service/v1/data-point', {
                                 <div id="tab2" className="tab-content">
 
                                     <pre className="px-10">
-                                      <code className="text-sm font-mono code-container">
+                                      <code className="text-sm font-mono code-container dark:text-gray-300">
+  
                                       {` 
+
 import requests
 
 # Build payload
@@ -346,8 +374,9 @@ else:
                                 <div id="tab3" className="tab-content">
 
                                     <pre className="px-10">
-                                        <code className="text-sm font-mono code-container">
+                                        <code className="text-sm font-mono code-container dark:text-gray-300">
                                           {`
+
 $payload = json_encode(array('field' => 'value'));
 
 $headers = array('x-api-key: your-api-key');
@@ -379,7 +408,7 @@ curl_close($ch);
                                 <div id="tab4" className="tab-content">
 
                                     <pre className="px-10">
-                                        <code className="text-sm font-mono code-container">
+                                        <code className="text-sm font-mono code-container dark:text-gray-300">
                                           {`
 
 payload := "{\"field\": \"value\"}"
