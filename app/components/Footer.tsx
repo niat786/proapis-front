@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const Footer = () => {
 
   return (
@@ -8,7 +10,7 @@ const Footer = () => {
         <div
             className="flex flex-wrap items-center justify-between gap-4 border-b pb-8 border-gray-300  dark:border-gray-800">
             <a href="/" aria-label="site logo">
-                <img src="/logo.svg" alt="logo" width="120"/>
+                <Image src="/logo.svg" alt="logo" width="120" height={60}/>
 
             </a>
             <div className="flex gap-3">

@@ -16,7 +16,7 @@ const header = () => {
                         <div className="flex flex-wrap items-center justify-between py-2 sm:py-4">
                             <div className="w-full items-center flex justify-between lg:w-auto">
                                 <a href="/" aria-label="proapis logo">
-                                    <img src="/logo.svg" alt="logo" width="120" />
+                                    <img src="/logo.svg" alt="logo" width="120" height={60} />
                                 </a>
                                 <div className="flex lg:hidden">
                                     <button aria-label="humburger" onClick={toggleMenu}

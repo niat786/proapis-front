@@ -9,10 +9,7 @@ import { Pagination } from 'swiper/modules';
 // import 'swiper/css/effect-cards';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-
- 
-
-
+import Image from 'next/image';
 
 export default function Home() {
   useEffect(() => {
@@ -567,7 +564,7 @@ if response.status == 200 {
                                 className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-gray-600 group">
                                 <div className="flex gap-3">
                                     <span className="relative block rounded-full text-lg size-10">
-                                        <img className="h-full w-full rounded-full object-cover"
+                                        <Image className="h-full w-full rounded-full object-cover"
                                             alt="Mark Whitman" src="/images/testimonials/mark.png" loading="lazy"
                                             width="120" height="120"/>
                                     </span>
@@ -594,7 +591,7 @@ if response.status == 200 {
                                 className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-gray-600 group">
                                 <div className="flex gap-3">
                                     <span className="relative block rounded-full text-lg size-10">
-                                        <img className="h-full w-full rounded-full object-cover"
+                                        <Image className="h-full w-full rounded-full object-cover"
                                             alt="Shah Karimmohideen" src="/images/testimonials/shah.jpeg"
                                             loading="lazy" width="120" height="120"/>
                                     </span>
@@ -624,7 +621,7 @@ if response.status == 200 {
                                 className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-gray-600 group">
                                 <div className="flex gap-3">
                                     <span className="relative block rounded-full text-lg size-10">
-                                        <img className="h-full w-full rounded-full object-cover"
+                                        <Image className="h-full w-full rounded-full object-cover"
                                             alt="Jens Brandt" src="/images/testimonials/jens.jpeg" loading="lazy"
                                             width="120" height="120"/>
                                     </span>
