@@ -1,5 +1,4 @@
 "use client"
-// import "./app.css";
 import "./custom-css.css";
 
 import { useEffect } from 'react';
@@ -62,13 +61,13 @@ export default function Home() {
   return (
     <>
     <Header></Header>
-    <main className="overflow-hidden">
+    <main className="overflow-hidden ">
         <section className="relative">
             <div className="relative pt-24 lg:pt-28">
                 <div className="mx-auto px-6 max-w-7xl md:px-12">
                     <div className="text-center sm:mx-auto sm:w-10/12 lg:mr-auto lg:mt-0 lg:w-4/5">
                         <a href="https://app.proapis.com"
-                            className="border w-fit mx-auto flex justify-between items-center transition duration-200 rounded-full border-gray-300   hover:border-gray-200  dark:border-400 dark:hover:border-[--ui-dark-border-hover-color] p-1 group gap-2">
+                            className="border w-fit mx-auto flex justify-between items-center transition duration-200 rounded-full border-gray-300   hover:border-gray-200  dark:border-gray-700 dark:hover:border-gray-600 p-1 group gap-2">
                             <span
                                 className="block text-sm px-2 py-0.5 rounded-full text-white bg-[#2196f3]">Join
                                 Now</span>
@@ -133,7 +132,7 @@ export default function Home() {
                     <div className="relative">
                         <div className="relative z-10 grid gap-3 grid-cols-6">
                             <div
-                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-10 rounded-3xl bg-white border border-gray-300  dark:border-400 dark:bg-[--card-dark-bg]">
+                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-10 rounded-3xl bg-white border border-gray-300  dark:border-gray-600 dark:bg-gray-950">
                                 <div className="size-fit m-auto relative">
                                     <div className="relative h-24 w-56 flex items-center">
                                         <svg className="absolute inset-0 size-full text-gray-400 dark:text-gray-600"
@@ -150,7 +149,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div
-                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-10 rounded-3xl bg-white border border-gray-300  dark:border-400 dark:bg-[--card-dark-bg]">
+                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-10 rounded-3xl bg-white border border-gray-300  dark:border-gray-600 dark:bg-gray-950">
                                 <div className="size-fit m-auto relative">
                                     <div className="relative h-24 w-56 flex items-center">
                                         <svg className="absolute inset-0 size-full text-gray-400 dark:text-gray-600"
@@ -167,7 +166,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div
-                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-10 rounded-3xl bg-white border border-gray-300  dark:border-400 dark:bg-[--card-dark-bg]">
+                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-10 rounded-3xl bg-white border border-gray-300  dark:border-gray-600 dark:bg-gray-950">
                                 <div className="size-fit m-auto relative">
                                     <div className="relative h-24 w-56 flex items-center">
                                         <svg className="absolute inset-0 size-full text-gray-400 dark:text-gray-600"
@@ -202,7 +201,7 @@ export default function Home() {
                             </div>
                         </div>
                         <div
-                            className="overflow-hidden lg:col-span-3 border bg-white dark:bg-[--card-dark-bg] rounded-3xl border-gray-300  dark:border-400">
+                            className="overflow-hidden lg:col-span-3 border bg-white dark:bg-[--card-dark-bg] rounded-3xl border-gray-300  dark:border-gray-600">
                             <div className="flex gap-2 py-6 *:size-2.5 *:rounded-full px-10">
                                 <div className="bg-[#f87171]"></div>
                                 <div className="bg-[#fbbf24]"></div>
@@ -211,7 +210,7 @@ export default function Home() {
 
                             {/* icons tabs start */}
                             <div
-                                className="flex gap-3 px-10 text-gray-600 dark:text-gray-400 *:aspect-square *:border *:p-4 *:rounded-full *:border-gray-300  dark:*:border-[--ui-dark-border-color]">
+                                className="flex gap-3 px-10 text-gray-600 dark:text-gray-400 *:aspect-square *:border *:p-4 *:rounded-full *:border-gray-300  dark:*:border-gray-500">
                                 <div data-target="tab1" className="tab-button">
                                     <svg className="size-7" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                          width="1em" height="1em"
@@ -243,7 +242,7 @@ export default function Home() {
                                     </svg>
                                 </div>
                                 <div data-target="tab2" 
-                                    className="bg-gray-950 tab-button text-white dark:bg-white dark:text-gray-950">
+                                    className="bg-gray-800 tab-button text-white dark:bg-white dark:text-gray-800">
                                     <svg className="size-7" fill="currentColor" width="1.53em" height="1em"
                                         viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -424,7 +423,7 @@ if response.status == 200 {
                     </div>
                     <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                         <div
-                            className="relative group overflow-hidden p-10 rounded-3xl bg-white border border-gray-300  dark:border-400 dark:bg-[--card-dark-bg]">
+                            className="relative group overflow-hidden p-10 rounded-3xl bg-white border border-gray-300  dark:border-gray-600 dark:bg-gray-950">
                             <div aria-hidden="true"
                                 className="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-[#2196f3] to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10">
                             </div>
@@ -460,7 +459,7 @@ if response.status == 200 {
                                         sclable real time Google search API.</p>
                                 </div>
                                 <div
-                                    className="flex gap-3 -mb-10 py-4 border-t border-gray-300  dark:border-400">
+                                    className="flex gap-3 -mb-10 py-4 border-t border-gray-300  dark:border-gray-600">
                                     <a href="#" download="/"
                                         className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
                                         <span>Sample Data</span>
@@ -479,7 +478,7 @@ if response.status == 200 {
                             </div>
                         </div>
                         <div
-                            className="relative group overflow-hidden p-10 rounded-3xl bg-white border border-gray-300  dark:border-400 dark:bg-[--card-dark-bg]">
+                            className="relative group overflow-hidden p-10 rounded-3xl bg-white border border-gray-300  dark:border-gray-600 dark:bg-gray-950">
                             <div aria-hidden="true"
                                 className="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-info-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10">
                             </div>
@@ -503,7 +502,7 @@ if response.status == 200 {
                                         time LinkedIn data API.</p>
                                 </div>
                                 <div
-                                    className="flex gap-3 -mb-10 py-4 border-t border-gray-300  dark:border-400">
+                                    className="flex gap-3 -mb-10 py-4 border-t border-gray-300  dark:border-gray-600">
                                     <a href="#" download="/"
                                         className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
                                         <span>Sample Data</span>
@@ -536,7 +535,7 @@ if response.status == 200 {
                     <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                         <div className="space-y-3">
                             <div
-                                className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-400 group">
+                                className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-gray-600 group">
                                 <div className="flex gap-3">
                                     <span className="relative block rounded-full text-lg size-10">
                                         <img className="h-full w-full rounded-full object-cover"
@@ -563,7 +562,7 @@ if response.status == 200 {
                         </div>
                         <div className="space-y-3">
                             <div
-                                className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-400 group">
+                                className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-gray-600 group">
                                 <div className="flex gap-3">
                                     <span className="relative block rounded-full text-lg size-10">
                                         <img className="h-full w-full rounded-full object-cover"
@@ -593,7 +592,7 @@ if response.status == 200 {
                         <div className="space-y-3">
                             {/* Start of Testimonial 3 */}
                             <div
-                                className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-400 group">
+                                className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-gray-600 group">
                                 <div className="flex gap-3">
                                     <span className="relative block rounded-full text-lg size-10">
                                         <img className="h-full w-full rounded-full object-cover"

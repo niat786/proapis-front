@@ -10,7 +10,7 @@ const header = () => {
     return (
         <>
             <header>
-                <nav id="top-nav" className={isMenuOpen ? 'h-screen lg:h-auto fixed overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/75 dark:shadow-md shadow-sm dark:shadow-gray-950/10 border-b border-gray-300   border-x dark:border-[--ui-dark-border-color] backdrop-blur' : 'fixed overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/75 dark:shadow-md shadow-sm dark:shadow-gray-950/10 border-b border-gray-300   border-x dark:border-[--ui-dark-border-color] backdrop-blur'}
+                <nav id="top-nav" className={isMenuOpen ? 'h-screen lg:h-auto fixed overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/75 dark:shadow-md shadow-sm dark:shadow-gray-600/30 border-b border-gray-300   border-x dark:border-gray-700 backdrop-blur' : 'fixed overflow-hidden z-20 w-full bg-white/80 dark:bg-gray-950/75 dark:shadow shadow-sm dark:shadow-gray-950/10 border-b border-gray-300   border-x dark:border-gray-800 backdrop-blur'}
                 >
                     <div className="px-6 m-auto max-w-6xl 2xl:px-0">
                         <div className="flex flex-wrap items-center justify-between py-2 sm:py-4">
@@ -64,7 +64,7 @@ const header = () => {
                                 </div>
 
                                 <div
-                                    className="w-full space-y-2 gap-2 pt-6 pb-4 lg:pb-0 border-t border-gray-300   dark:border-[--ui-dark-border-color] items-center flex flex-col lg:flex-row lg:space-y-0 lg:w-fit lg:border-l lg:border-t-0 lg:pt-0 lg:pl-2">
+                                    className="w-full space-y-2 gap-2 pt-6 pb-4 lg:pb-0 border-t border-gray-300   dark:border-gray-600 items-center flex flex-col lg:flex-row lg:space-y-0 lg:w-fit lg:border-l lg:border-t-0 lg:pt-0 lg:pl-2">
                                     <a href="https://app.proapis.com/"
                                         className="w-full h-9 lg:w-fit group flex items-center rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 *:disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border dark:disabled:border-gray-800 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-800 hover:bg-gray-100 active:bg-gray-200/75 dark:text-gray-300 dark:hover:bg-gray-500/10 dark:active:bg-gray-500/15 lg:text-sm lg:h-8 px-3.5 justify-center">
                                         <span>Login</span>

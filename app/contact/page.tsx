@@ -14,7 +14,7 @@ const contact = () => {
                             <div className="text-center sm:mx-auto sm:w-10/12 lg:mr-auto lg:mt-0 lg:w-4/5">
 
                                 <h1
-                                    className="mt-8 text-wrap text-4xl md:text-5xl font-semibold text-gray-950 dark:text-white xl:text-5xl xl:[line-height:1.125]">
+                                    className="mt-8 text-wrap text-4xl md:text-5xl font-semibold text-gray-950 dark:text-gray-300 xl:text-5xl xl:[line-height:1.125]">
                                     Get in touch!</h1>
                                 <p
                                     className="text-wrap mx-auto mt-8 max-w-2xl text-lg text-gray-700 dark:text-gray-300 hidden sm:block">
@@ -23,7 +23,6 @@ const contact = () => {
                                 <p className="text-wrap mx-auto mt-6 max-w-2xl text-gray-700 dark:text-gray-300 sm:hidden">Highly
                                     customizable components for building modern websites and applications, with your personnal
                                     spark.</p>
-
                             </div>
                         </div>
                     </div>
@@ -35,39 +34,39 @@ const contact = () => {
                         <div className="mx-auto px-4 max-w-6xl">
 
                             <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-                                <div className="border rounded-xl border-dashed p-10 pt-11 dark:bg-gray-900 ">
+                                <div className="border rounded-xl border-dashed p-10 pt-11 dark:bg-gray-900 dark:border-gray-700">
 
 
                                     <form className="max-w-lg mx-auto">
                                         <div className="mb-5">
                                             <label htmlFor="username"
-                                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
                                                 Name</label>
                                             <input type="text" id="username"
-                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-300 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                                 required />
                                         </div>
                                         <div className="mb-5">
                                             <label htmlFor="email"
-                                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your
                                                 Email</label>
                                             <input type="email" id="email"
-                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-300 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                                 required />
                                         </div>
                                         <div className="mb-5">
                                             <label htmlFor="subject"
-                                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
+                                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
                                             <input type="text" id="subject"
-                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-300 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                                 required />
                                         </div>
 
                                         <div className="mb-5">
                                             <label htmlFor="message"
-                                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
+                                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Message</label>
                                             <textarea rows={6} id="message"
-                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-gray-300 dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                                 required></textarea>
                                         </div>
 
@@ -112,11 +111,8 @@ const contact = () => {
                         </div>
                     </div>
                 </section>
-
             </main>
-
             <Footer></Footer>
-
         </>
     )
 }

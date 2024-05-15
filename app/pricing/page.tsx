@@ -20,13 +20,13 @@ const pricing = () => {
     <Header></Header>
 
     <main className="overflow-hidden">
-        <section className="relative">
+        <section className="relative ">
             <div className="relative pt-24 lg:pt-28">
                 <div className="mx-auto px-5 max-w-7xl md:px-5">
                     <div className="text-center sm:mx-auto sm:w-10/12 lg:mr-auto lg:mt-0 lg:w-4/5">
 
                         <h1
-                            className="mt-8 text-wrap text-4xl md:text-5xl font-semibold text-gray-950 dark:text-white xl:text-5xl xl:[line-height:1.125]">
+                            className="mt-8 text-wrap text-4xl md:text-5xl font-semibold text-gray-950 dark:text-gray-300 xl:text-5xl xl:[line-height:1.125]">
                             Enterprise-Grade Data APIs pricing</h1>
                         <p
                             className="text-wrap mx-auto mt-8 max-w-2xl text-lg text-gray-700 dark:text-gray-300 hidden sm:block">
@@ -38,33 +38,33 @@ const pricing = () => {
                             spark.</p>
 
                             <div className="my-10">
-                                <label className="inline-flex items-center cursor-pointer p-5 rounded-xl border border-dashed bg-gray-50 dark:bg-gray-700 dark:text-white">
+                                <label className="inline-flex items-center cursor-pointer p-5 rounded-xl border dark:border-gray-800 border-dashed bg-gray-50 dark:bg-gray-900 dark:text-gray-300">
                                     <input type="checkbox" id="priceToggleButton" value="" className="sr-only peer"  checked={isChecked}
           onChange={handleToggle}/>
-                                    <div className="relative w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-primary-300 dark:peer-focus:ring-primary-800 rounded-full peer dark:bg-gray-950 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-primary-500 peer-checked:bg-primary-500"></div>
+                                    <div className="relative w-14 h-7 bg-gray-200 peer-focus:outline-none peer-focus:ring-0 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-950 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all dark:border-blue-500 peer-checked:bg-blue-500"></div>
                                     
                                     <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">Annually</span>&nbsp;&nbsp;
                                     <svg className="rotate-45" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 99.3 57" width="48">
                                         <path fill="none" stroke="#bdc5d1" strokeWidth="4" strokeLinecap="round" strokeMiterlimit="10" d="M2,39.5l7.7,14.8c0.4,0.7,1.3,0.9,2,0.4L27.9,42"></path>
                                         <path fill="none" stroke="#bdc5d1" strokeWidth="4" strokeLinecap="round" strokeMiterlimit="10" d="M11,54.3c0,0,10.3-65.2,86.3-50"></path>
                                       </svg>
-                                      <span className="bg-primary-100 text-primary-800 text-xs font-medium me-2 px-3 py-1 rounded-full mx-2 dark:bg-seconday-900 dark:text-primary-900">Save 20%</span>
+                                      <span className="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-3 py-1 rounded-full mx-2 dark:bg-seconday-900 dark:text-blue-900">Save 20%</span>
                                   </label>
                             </div>
 
                         <div className="my-20 gap-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
                             {/* price card starts - 1 */}
                             <div
-                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-white dark:border-gray-500 dark:bg-gray-700">
+                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-gray-300 dark:border-gray-800 dark:bg-gray-900">
                                 <div className="price my-4"><span id="starter-price" className="text-3xl md:text-4xl font-bold animate-counter">{isChecked ? '$40' : '$50'}</span><span
-                                        className="text-primary-500 dark:text-primary-500 font-semibold text-lg">/mo</span>
+                                        className="text-blue-500 dark:text-blue-500 font-semibold text-lg">/mo</span>
                                 </div>
                                 <div className="plan text-2xl md:text-3xl font-semibold">Starter</div>
                                 <div className="description my-4">Basic LinkedIn data for research/lead generation.</div>
                                 <div className="list-features my-4">
                                     <ul className="mt-5 list-none text-left space-y-3">
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -74,7 +74,7 @@ const pricing = () => {
                                             <span>5K API Credits / mo</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -84,7 +84,7 @@ const pricing = () => {
                                             <span>5 Concurrent Threads</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -95,7 +95,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -106,7 +106,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -123,7 +123,7 @@ const pricing = () => {
                                     <div
                                         className="p-1 mt-10 rounded-xl bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
                                         <a href="https://app.proapis.com"
-                                            className="*:select-none dark:shadow-primary-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-[--btn-border-radius] border border-primary-500 bg-primary-500 px-4 text-base text-white shadow-md shadow-primary-200 before:absolute before:inset-0 before:rounded-[calc(var(--btn-border-radius)-1px)] before:border before:border-primary-500 before:bg-gradient-to-b before:from-primary-500 hover:bg-primary-500 active:bg-primary-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-primary-500 dark:before:border-0 dark:before:border-t dark:before:border-primary-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-primary-700 dark:active:bg-primary-800 dark:active:before:from-primary-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
+                                            className="*:select-none dark:shadow-blue-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-xl border border-blue-500 bg-blue-500 px-4 text-base text-white shadow-md shadow-blue-200 before:absolute before:inset-0 before:rounded-lg before:border before:border-blue-500 before:bg-gradient-to-b before:from-blue-500 hover:bg-blue-500 active:bg-blue-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-blue-500 dark:before:border-0 dark:before:border-t dark:before:border-blue-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-blue-700 dark:active:bg-blue-800 dark:active:before:from-blue-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
                                             <svg className="size-5 relative" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path className="opacity-20 dark:opacity-50"
@@ -142,16 +142,16 @@ const pricing = () => {
 
                             {/* price card starts - 2 */}
                             <div
-                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-white dark:border-gray-500 dark:bg-gray-700">
+                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-gray-300 dark:border-gray-800 dark:bg-gray-900">
                                 <div className="price my-4"><span id="basic-price" className="text-3xl md:text-4xl font-bold animate-counter">{isChecked ? '$108' : '$135'}</span><span
-                                        className="text-primary-500 dark:text-primary-500 font-semibold text-lg">/mo</span>
+                                        className="text-blue-500 dark:text-blue-500 font-semibold text-lg">/mo</span>
                                 </div>
                                 <div className="plan text-2xl md:text-3xl font-semibold">Basic</div>
                                 <div className="description my-4">Moderate LinkedIn data for lead gen./analysis.</div>
                                 <div className="list-features my-4">
                                     <ul className="mt-5 list-none text-left space-y-3">
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -161,7 +161,7 @@ const pricing = () => {
                                             <span>15K API Credits / mo</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -171,7 +171,7 @@ const pricing = () => {
                                             <span>10 Concurrent Threads</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -182,7 +182,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -193,7 +193,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -210,7 +210,7 @@ const pricing = () => {
                                     <div
                                         className="p-1 mt-10 rounded-xl bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
                                         <a href="https://app.proapis.com"
-                                            className="*:select-none dark:shadow-primary-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-[--btn-border-radius] border border-primary-500 bg-primary-500 px-4 text-base text-white shadow-md shadow-primary-200 before:absolute before:inset-0 before:rounded-[calc(var(--btn-border-radius)-1px)] before:border before:border-primary-500 before:bg-gradient-to-b before:from-primary-500 hover:bg-primary-500 active:bg-primary-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-primary-500 dark:before:border-0 dark:before:border-t dark:before:border-primary-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-primary-700 dark:active:bg-primary-800 dark:active:before:from-primary-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
+                                            className="*:select-none dark:shadow-blue-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-xl border border-blue-500 bg-blue-500 px-4 text-base text-white shadow-md shadow-blue-200 before:absolute before:inset-0 before:rounded-lg before:border before:border-blue-500 before:bg-gradient-to-b before:from-blue-500 hover:bg-blue-500 active:bg-blue-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-blue-500 dark:before:border-0 dark:before:border-t dark:before:border-blue-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-blue-700 dark:active:bg-blue-800 dark:active:before:from-blue-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
                                             <svg className="size-5 relative" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path className="opacity-20 dark:opacity-50"
@@ -229,16 +229,16 @@ const pricing = () => {
 
                             {/* price card starts - 3 */}
                             <div
-                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-white dark:border-gray-500 dark:bg-gray-700">
+                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-gray-300 dark:border-gray-800 dark:bg-gray-900">
                                 <div className="price my-4"><span id="plus-price" className="text-3xl md:text-4xl font-bold animate-counter">{isChecked ? '$320' : '$400'}</span><span
-                                        className="text-primary-500 dark:text-primary-500 font-semibold text-lg">/mo</span>
+                                        className="text-blue-500 dark:text-blue-500 font-semibold text-lg">/mo</span>
                                 </div>
                                 <div className="plan text-2xl md:text-3xl font-semibold">Plus</div>
                                 <div className="description my-4">Advanced LinkedIn data extraction/analysis.</div>
                                 <div className="list-features my-4">
                                     <ul className="mt-5 list-none text-left space-y-3">
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -248,7 +248,7 @@ const pricing = () => {
                                             <span>50K API Credits / mo</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -258,7 +258,7 @@ const pricing = () => {
                                             <span>15 Concurrent Threads</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -269,7 +269,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -280,7 +280,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -297,7 +297,7 @@ const pricing = () => {
                                     <div
                                         className="p-1 mt-10 rounded-xl bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
                                         <a href="https://app.proapis.com"
-                                            className="*:select-none dark:shadow-primary-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-[--btn-border-radius] border border-primary-500 bg-primary-500 px-4 text-base text-white shadow-md shadow-primary-200 before:absolute before:inset-0 before:rounded-[calc(var(--btn-border-radius)-1px)] before:border before:border-primary-500 before:bg-gradient-to-b before:from-primary-500 hover:bg-primary-500 active:bg-primary-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-primary-500 dark:before:border-0 dark:before:border-t dark:before:border-primary-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-primary-700 dark:active:bg-primary-800 dark:active:before:from-primary-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
+                                            className="*:select-none dark:shadow-blue-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-xl border border-blue-500 bg-blue-500 px-4 text-base text-white shadow-md shadow-blue-200 before:absolute before:inset-0 before:rounded-lg before:border before:border-blue-500 before:bg-gradient-to-b before:from-blue-500 hover:bg-blue-500 active:bg-blue-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-blue-500 dark:before:border-0 dark:before:border-t dark:before:border-blue-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-blue-700 dark:active:bg-blue-800 dark:active:before:from-blue-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
                                             <svg className="size-5 relative" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path className="opacity-20 dark:opacity-50"
@@ -316,9 +316,9 @@ const pricing = () => {
 
                             {/* price card starts - 4 */}
                             <div
-                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-white dark:border-gray-500 dark:bg-gray-700">
+                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-gray-300 dark:border-gray-800 dark:bg-gray-900">
                                 <div className="price my-4"><span id="professional-price" className="text-3xl md:text-4xl font-bold animate-counter">{isChecked ? '$2,000' : '$2,500'}</span><span
-                                        className="text-primary-500 dark:text-primary-500 font-semibold text-lg">/mo</span>
+                                        className="text-blue-500 dark:text-blue-500 font-semibold text-lg">/mo</span>
                                 </div>
                                 <div className="plan text-2xl md:text-3xl font-semibold">Professional</div>
                                 <div className="description my-4">Significant LinkedIn data needs with high concurrency.
@@ -326,7 +326,7 @@ const pricing = () => {
                                 <div className="list-features my-4">
                                     <ul className="mt-5 list-none text-left space-y-3">
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -336,7 +336,7 @@ const pricing = () => {
                                             <span>500K API Credits / mo</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -346,7 +346,7 @@ const pricing = () => {
                                             <span>25 Concurrent Threads</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -357,7 +357,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -368,7 +368,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -385,7 +385,7 @@ const pricing = () => {
                                     <div
                                         className="p-1 mt-10 rounded-xl bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
                                         <a href="https://app.proapis.com"
-                                            className="*:select-none dark:shadow-primary-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-[--btn-border-radius] border border-primary-500 bg-primary-500 px-4 text-base text-white shadow-md shadow-primary-200 before:absolute before:inset-0 before:rounded-[calc(var(--btn-border-radius)-1px)] before:border before:border-primary-500 before:bg-gradient-to-b before:from-primary-500 hover:bg-primary-500 active:bg-primary-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-primary-500 dark:before:border-0 dark:before:border-t dark:before:border-primary-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-primary-700 dark:active:bg-primary-800 dark:active:before:from-primary-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
+                                            className="*:select-none dark:shadow-blue-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-xl border border-blue-500 bg-blue-500 px-4 text-base text-white shadow-md shadow-blue-200 before:absolute before:inset-0 before:rounded-lg before:border before:border-blue-500 before:bg-gradient-to-b before:from-blue-500 hover:bg-blue-500 active:bg-blue-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-blue-500 dark:before:border-0 dark:before:border-t dark:before:border-blue-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-blue-700 dark:active:bg-blue-800 dark:active:before:from-blue-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
                                             <svg className="size-5 relative" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path className="opacity-20 dark:opacity-50"
@@ -404,9 +404,9 @@ const pricing = () => {
 
                             {/* price card starts - 5 */}
                             <div
-                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-white dark:border-gray-500 dark:bg-gray-700">
+                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-gray-300 dark:border-gray-800 dark:bg-gray-900">
                                 <div className="price my-4"><span id="business-price" className="text-3xl md:text-4xl font-bold animate-counter">{isChecked ? '$3,200' : '$4,000'}</span><span
-                                        className="text-primary-500 dark:text-primary-500 font-semibold text-lg">/mo</span>
+                                        className="text-blue-500 dark:text-blue-500 font-semibold text-lg">/mo</span>
                                 </div>
                                 <div className="plan text-2xl md:text-3xl font-semibold">Business</div>
                                 <div className="description my-4">Extensive LinkedIn data needs with robust performance.
@@ -414,7 +414,7 @@ const pricing = () => {
                                 <div className="list-features my-4">
                                     <ul className="mt-5 list-none text-left space-y-3">
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -424,7 +424,7 @@ const pricing = () => {
                                             <span>1M API Credits / mo</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -434,7 +434,7 @@ const pricing = () => {
                                             <span>50 Concurrent Threads</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -445,7 +445,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -456,7 +456,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -473,7 +473,7 @@ const pricing = () => {
                                     <div
                                         className="p-1 mt-10 rounded-xl bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
                                         <a href="https://app.proapis.com"
-                                            className="*:select-none dark:shadow-primary-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-[--btn-border-radius] border border-primary-500 bg-primary-500 px-4 text-base text-white shadow-md shadow-primary-200 before:absolute before:inset-0 before:rounded-[calc(var(--btn-border-radius)-1px)] before:border before:border-primary-500 before:bg-gradient-to-b before:from-primary-500 hover:bg-primary-500 active:bg-primary-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-primary-500 dark:before:border-0 dark:before:border-t dark:before:border-primary-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-primary-700 dark:active:bg-primary-800 dark:active:before:from-primary-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
+                                            className="*:select-none dark:shadow-blue-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-xl border border-blue-500 bg-blue-500 px-4 text-base text-white shadow-md shadow-blue-200 before:absolute before:inset-0 before:rounded-lg before:border before:border-blue-500 before:bg-gradient-to-b before:from-blue-500 hover:bg-blue-500 active:bg-blue-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-blue-500 dark:before:border-0 dark:before:border-t dark:before:border-blue-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-blue-700 dark:active:bg-blue-800 dark:active:before:from-blue-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
                                             <svg className="size-5 relative" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path className="opacity-20 dark:opacity-50"
@@ -492,9 +492,9 @@ const pricing = () => {
 
                             {/* price card starts - 6 */}
                             <div
-                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-white dark:border-gray-500 dark:bg-gray-700">
+                                className="border rounded-xl shadow-lg p-5 flex flex-col space-y-2 dark:text-gray-300 dark:border-gray-800 dark:bg-gray-900">
                                 <div className="price my-4"><span id="enterprise-price" className="text-3xl md:text-4xl font-bold animate-counter">{isChecked ? '$12,000' : '$15,000'}</span><span
-                                        className="text-primary-500 dark:text-primary-500 font-semibold text-lg">/mo</span>
+                                        className="text-blue-500 dark:text-blue-500 font-semibold text-lg">/mo</span>
                                 </div>
                                 <div className="plan text-2xl md:text-3xl font-semibold">Enterprise</div>
                                 <div className="description my-4">Highest LinkedIn data needs with highest concurrency.
@@ -502,7 +502,7 @@ const pricing = () => {
                                 <div className="list-features my-4">
                                     <ul className="mt-5 list-none text-left space-y-3">
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -512,7 +512,7 @@ const pricing = () => {
                                             <span>5M API Credits / mo</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -522,7 +522,7 @@ const pricing = () => {
                                             <span>100 Concurrent Threads</span>
                                         </li>
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -533,7 +533,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -544,7 +544,7 @@ const pricing = () => {
                                         </li>
 
                                         <li className="space-x-2 flex"><span
-                                                className="text-primary-500 dark:text-primary-500"><svg
+                                                className="text-blue-500 dark:text-blue-500"><svg
                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                                                     fill="currentColor" className="w-5 h-5">
                                                     <path fillRule="evenodd"
@@ -561,7 +561,7 @@ const pricing = () => {
                                     <div
                                         className="p-1 mt-10 rounded-xl bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
                                         <a href="https://app.proapis.com"
-                                            className="*:select-none dark:shadow-primary-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-[--btn-border-radius] border border-primary-500 bg-primary-500 px-4 text-base text-white shadow-md shadow-primary-200 before:absolute before:inset-0 before:rounded-[calc(var(--btn-border-radius)-1px)] before:border before:border-primary-500 before:bg-gradient-to-b before:from-primary-500 hover:bg-primary-500 active:bg-primary-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-primary-500 dark:before:border-0 dark:before:border-t dark:before:border-primary-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-primary-700 dark:active:bg-primary-800 dark:active:before:from-primary-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
+                                            className="*:select-none dark:shadow-blue-500/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-xl border border-blue-500 bg-blue-500 px-4 text-base text-white shadow-md shadow-blue-200 before:absolute before:inset-0 before:rounded-lg before:border before:border-blue-500 before:bg-gradient-to-b before:from-blue-500 hover:bg-blue-500 active:bg-blue-700 disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-blue-500 dark:before:border-0 dark:before:border-t dark:before:border-blue-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-blue-700 dark:active:bg-blue-800 dark:active:before:from-blue-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
                                             <svg className="size-5 relative" viewBox="0 0 20 20" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg">
                                                 <path className="opacity-20 dark:opacity-50"

@@ -41,6 +41,9 @@
     font-style: normal;
     font-display: swap;
 }
+body{
+    @apply dark:bg-gray-950;
+}
 
 .swiper-pagination-bullet{
     @apply !bg-gray-200 dark:!bg-gray-700 !opacity-100;
