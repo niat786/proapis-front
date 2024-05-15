@@ -1,5 +1,5 @@
 "use client"
-import "./app.css";
+// import "./app.css";
 import "./custom-css.css";
 
 import { useEffect } from 'react';
@@ -68,9 +68,9 @@ export default function Home() {
                 <div className="mx-auto px-6 max-w-7xl md:px-12">
                     <div className="text-center sm:mx-auto sm:w-10/12 lg:mr-auto lg:mt-0 lg:w-4/5">
                         <a href="https://app.proapis.com"
-                            className="border w-fit mx-auto flex justify-between items-center transition duration-200 rounded-[--annonce-border-radius] border-[--ui-light-border-color] hover:border-[--ui-light-border-hover-color] dark:border-[--ui-dark-border-color] dark:hover:border-[--ui-dark-border-hover-color] p-1 group gap-2">
+                            className="border w-fit mx-auto flex justify-between items-center transition duration-200 rounded-full border-gray-300   hover:border-gray-200  dark:border-400 dark:hover:border-[--ui-dark-border-hover-color] p-1 group gap-2">
                             <span
-                                className="block text-sm px-2 py-0.5 rounded-[calc(var(--annonce-border-radius)-0.375rem)] text-white bg-[#2196f3]">Join
+                                className="block text-sm px-2 py-0.5 rounded-full text-white bg-[#2196f3]">Join
                                 Now</span>
                             <span className="text-sm font-medium text-gray-700 dark:text-gray-300 flex gap-6">
                                 Get your free API key
@@ -99,9 +99,9 @@ export default function Home() {
                             spark.</p>
                         <div className="mt-8 flex flex-col items-center justify-center gap-4">
                             <div
-                                className="p-1 rounded-[calc(var(--btn-border-radius)+4px)] bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
+                                className="p-1 rounded-xl bg-gray-950/5 border dark:border-white/10 dark:bg-white/5">
                                 <a href="https://app.proapis.com"
-                                    className="*:select-none dark:shadow-[#2196f3]/10 *:disabled:opacity-20 disabled:*:text-gray-300 disabled:dark:*:text-gray-700 dark:*:disabled:!text-white group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-[--btn-border-radius] border border-[#2196f3] bg-[#2196f3] px-4 text-base text-white shadow-md shadow-primary-200 before:absolute before:inset-0 before:rounded-[calc(var(--btn-border-radius)-1px)] before:border before:border-[#2196f3] before:bg-gradient-to-b before:from-[#2196f3] hover:bg-[#2196f3] active:bg-primary-700 disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950/40 disabled:before:border-transparent disabled:before:bg-gray-100 disabled:before:from-transparent dark:border-0 dark:bg-[#2196f3] dark:before:border-0 dark:before:border-t dark:before:border-primary-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-primary-700 dark:active:bg-primary-800 dark:active:before:from-primary-700 dark:disabled:border dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:disabled:before:bg-gray-900 dark:disabled:before:from-gray-900 dark:disabled:before:shadow-none [&>*:not(.sr-only)]:relative">
+                                    className="*:select-none dark:shadow-[#2196f3]/10 *:disabled:opacity-20   group relative z-[1] flex h-11 items-center justify-center gap-1.5 rounded-lg border border-[#2196f3] bg-gradient-to-tr from-[#2196f3] to-[#0062b3] hover:bg-gradient-to-t hover:from-[#0062b3] hover:to-[#2196f3] px-4 text-base text-white shadow-md shadow-primary-200 before:absolute before:inset-0 before:rounded-lg before:border before:border-[#2196f3] before:bg-gradient-to-b before:from-[#2196f3] hover:bg-[#2196f3]  dark:border-0 dark:bg-[#2196f3] dark:before:border-0 dark:before:border-t dark:before:border-primary-400 dark:before:shadow-inner dark:before:shadow-white/10 dark:hover:bg-primary-700 dark:active:bg-primary-800  [&>*:not(.sr-only)]:relative">
                                     <svg className="size-5 relative" viewBox="0 0 20 20" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path className="opacity-20 dark:opacity-50"
@@ -114,7 +114,7 @@ export default function Home() {
                                     <span className="text-nowrap">Get Started</span></a>
                             </div>
                             <button
-                                className="hidden *:select-none *:disabled:opacity-20 dark:*:disabled:!text-white dark:hover:bg-gray-500/15 group h-9 items-center justify-center gap-1.5 rounded-[--btn-border-radius] bg-gray-100 px-3 text-base text-gray-800 hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-950 dark:bg-gray-500/10 dark:text-gray-300 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 [&>*:not(.sr-only)]:relative">
+                                className="hidden *:select-none *:disabled:opacity-20 dark:*:disabled:!text-white dark:hover:bg-gray-500/15 group h-9 items-center justify-center gap-1.5 rounded-xl bg-gray-100 px-3 text-base text-gray-800 hover:bg-gray-200/75 active:bg-gray-100 disabled:border disabled:border-gray-300   disabled:bg-gray-100 disabled:text-gray-950 dark:bg-gray-500/10 dark:text-gray-300 dark:active:bg-gray-500/10 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 [&>*:not(.sr-only)]:relative">
                                 <span className="text-sm">Learn more</span>
                                 <svg className="-mr-1" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                                     viewBox="0 0 48 48">
@@ -133,7 +133,7 @@ export default function Home() {
                     <div className="relative">
                         <div className="relative z-10 grid gap-3 grid-cols-6">
                             <div
-                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-10 rounded-3xl bg-white border border-gray-300  dark:border-400 dark:bg-[--card-dark-bg]">
                                 <div className="size-fit m-auto relative">
                                     <div className="relative h-24 w-56 flex items-center">
                                         <svg className="absolute inset-0 size-full text-gray-400 dark:text-gray-600"
@@ -150,7 +150,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div
-                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-10 rounded-3xl bg-white border border-gray-300  dark:border-400 dark:bg-[--card-dark-bg]">
                                 <div className="size-fit m-auto relative">
                                     <div className="relative h-24 w-56 flex items-center">
                                         <svg className="absolute inset-0 size-full text-gray-400 dark:text-gray-600"
@@ -167,7 +167,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <div
-                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                                className="col-span-full lg:col-span-2 overflow-hidden flex relative p-10 rounded-3xl bg-white border border-gray-300  dark:border-400 dark:bg-[--card-dark-bg]">
                                 <div className="size-fit m-auto relative">
                                     <div className="relative h-24 w-56 flex items-center">
                                         <svg className="absolute inset-0 size-full text-gray-400 dark:text-gray-600"
@@ -202,8 +202,8 @@ export default function Home() {
                             </div>
                         </div>
                         <div
-                            className="overflow-hidden lg:col-span-3 border bg-white dark:bg-[--card-dark-bg] rounded-[--card-border-radius] border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
-                            <div className="flex gap-2 py-6 *:size-2.5 *:rounded-full px-[--card-padding]">
+                            className="overflow-hidden lg:col-span-3 border bg-white dark:bg-[--card-dark-bg] rounded-3xl border-gray-300  dark:border-400">
+                            <div className="flex gap-2 py-6 *:size-2.5 *:rounded-full px-10">
                                 <div className="bg-[#f87171]"></div>
                                 <div className="bg-[#fbbf24]"></div>
                                 <div className="bg-[#a3e635]"></div>
@@ -211,7 +211,7 @@ export default function Home() {
 
                             {/* icons tabs start */}
                             <div
-                                className="flex gap-3 px-[--card-padding] text-gray-600 dark:text-gray-400 *:aspect-square *:border *:p-4 *:rounded-[calc(var(--card-border-radius)/2)] *:border-[--ui-light-border-color] dark:*:border-[--ui-dark-border-color]">
+                                className="flex gap-3 px-10 text-gray-600 dark:text-gray-400 *:aspect-square *:border *:p-4 *:rounded-full *:border-gray-300  dark:*:border-[--ui-dark-border-color]">
                                 <div data-target="tab1" className="tab-button">
                                     <svg className="size-7" version="1.1" xmlns="http://www.w3.org/2000/svg"
                                          width="1em" height="1em"
@@ -285,7 +285,7 @@ export default function Home() {
                             <div>
                                 <div id="tab1" className="tab-content">
                                     {/* tab content here */}
-                                    <pre className="px-[--card-padding]">
+                                    <pre className="px-10">
                                         <code className="text-sm font-mono code-container">
                                         {`
 const payload = { 
@@ -315,7 +315,7 @@ fetch('https://api.proapis.com/api/service/v1/data-point', {
                                 {/* tab1 */}
                                 <div id="tab2" className="tab-content">
 
-                                    <pre className="px-[--card-padding]">
+                                    <pre className="px-10">
                                       <code className="text-sm font-mono code-container">
                                       {` 
 import requests
@@ -346,7 +346,7 @@ else:
                                 {/* tab3 */}
                                 <div id="tab3" className="tab-content">
 
-                                    <pre className="px-[--card-padding]">
+                                    <pre className="px-10">
                                         <code className="text-sm font-mono code-container">
                                           {`
 $payload = json_encode(array('field' => 'value'));
@@ -379,7 +379,7 @@ curl_close($ch);
                                 {/* tab1 */}
                                 <div id="tab4" className="tab-content">
 
-                                    <pre className="px-[--card-padding]">
+                                    <pre className="px-10">
                                         <code className="text-sm font-mono code-container">
                                           {`
 
@@ -424,13 +424,13 @@ if response.status == 200 {
                     </div>
                     <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                         <div
-                            className="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                            className="relative group overflow-hidden p-10 rounded-3xl bg-white border border-gray-300  dark:border-400 dark:bg-[--card-dark-bg]">
                             <div aria-hidden="true"
                                 className="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-[#2196f3] to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10">
                             </div>
                             <div className="relative">
                                 <div
-                                    className="border border-[#2196f3]/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15 before:rounded-[calc((var(--card-border-radius)/2)-1px)] before:absolute before:inset-0 before:border-t before:border-white before:from-primary-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+                                    className="border border-[#2196f3]/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-full dark:bg-gray-900 dark:border-white/15 before:rounded-full before:absolute before:inset-0 before:border-t before:border-white before:from-primary-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
                                     <svg viewBox="0 0 24 24" id="meteor-icon-kit__regular-google" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -460,9 +460,9 @@ if response.status == 200 {
                                         sclable real time Google search API.</p>
                                 </div>
                                 <div
-                                    className="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+                                    className="flex gap-3 -mb-10 py-4 border-t border-gray-300  dark:border-400">
                                     <a href="#" download="/"
-                                        className="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
                                         <span>Sample Data</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                                             viewBox="0 0 24 24">
@@ -472,20 +472,20 @@ if response.status == 200 {
                                         </svg>
                                     </a>
                                     <a href="#" download="/"
-                                        className="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
                                         <span>View Details</span>
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div
-                            className="relative group overflow-hidden p-[--card-padding] rounded-[--card-border-radius] bg-white border border-[--ui-light-border-color] dark:border-[--ui-dark-border-color] dark:bg-[--card-dark-bg]">
+                            className="relative group overflow-hidden p-10 rounded-3xl bg-white border border-gray-300  dark:border-400 dark:bg-[--card-dark-bg]">
                             <div aria-hidden="true"
                                 className="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-info-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10">
                             </div>
                             <div className="relative">
                                 <div
-                                    className="border border-info-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-[calc(var(--card-border-radius)/2)] dark:bg-gray-900 dark:border-white/15 before:rounded-[calc((var(--card-border-radius)/2)-1px)] before:absolute before:inset-0 before:border-t before:border-white before:from-info-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
+                                    className="border border-info-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-full dark:bg-gray-900 dark:border-white/15 before:rounded-full before:absolute before:inset-0 before:border-t before:border-white before:from-info-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
                                     <svg fill="currentColor" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
                                         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                                         <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round">
@@ -503,9 +503,9 @@ if response.status == 200 {
                                         time LinkedIn data API.</p>
                                 </div>
                                 <div
-                                    className="flex gap-3 -mb-[--card-padding] py-4 border-t border-[--ui-light-border-color] dark:border-[--ui-dark-border-color]">
+                                    className="flex gap-3 -mb-10 py-4 border-t border-gray-300  dark:border-400">
                                     <a href="#" download="/"
-                                        className="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
                                         <span>Sample Data</span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
                                             viewBox="0 0 24 24">
@@ -515,7 +515,7 @@ if response.status == 200 {
                                         </svg>
                                     </a>
                                     <a href="#" download="/"
-                                        className="group rounded-[--btn-border-radius] disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
+                                        className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
                                         <span>View Details</span>
                                     </a>
                                 </div>
@@ -536,10 +536,10 @@ if response.status == 200 {
                     <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
                         <div className="space-y-3">
                             <div
-                                className="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
+                                className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-400 group">
                                 <div className="flex gap-3">
-                                    <span className="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                        <img className="h-full w-full rounded-[--avatar-border-radius] object-cover"
+                                    <span className="relative block rounded-full text-lg size-10">
+                                        <img className="h-full w-full rounded-full object-cover"
                                             alt="Mark Whitman" src="/images/testimonials/mark.png" loading="lazy"
                                             width="120" height="120"/>
                                     </span>
@@ -563,10 +563,10 @@ if response.status == 200 {
                         </div>
                         <div className="space-y-3">
                             <div
-                                className="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
+                                className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-400 group">
                                 <div className="flex gap-3">
-                                    <span className="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                        <img className="h-full w-full rounded-[--avatar-border-radius] object-cover"
+                                    <span className="relative block rounded-full text-lg size-10">
+                                        <img className="h-full w-full rounded-full object-cover"
                                             alt="Shah Karimmohideen" src="/images/testimonials/shah.jpeg"
                                             loading="lazy" width="120" height="120"/>
                                     </span>
@@ -593,10 +593,10 @@ if response.status == 200 {
                         <div className="space-y-3">
                             {/* Start of Testimonial 3 */}
                             <div
-                                className="p-[--card-padding] rounded-[--card-border-radius] border bg-white border-[--ui-light-border-color] dark:bg-[--card-dark-bg] dark:border-[--ui-dark-border-color] group">
+                                className="p-10 rounded-3xl border bg-white border-gray-300  dark:bg-[--card-dark-bg] dark:border-400 group">
                                 <div className="flex gap-3">
-                                    <span className="relative block rounded-[--avatar-border-radius] text-lg size-10">
-                                        <img className="h-full w-full rounded-[--avatar-border-radius] object-cover"
+                                    <span className="relative block rounded-full text-lg size-10">
+                                        <img className="h-full w-full rounded-full object-cover"
                                             alt="Jens Brandt" src="/images/testimonials/jens.jpeg" loading="lazy"
                                             width="120" height="120"/>
                                     </span>

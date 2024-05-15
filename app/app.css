@@ -2328,7 +2328,7 @@ video {
   border-width: 1px;
 }
 
-.disabled\:border-gray-200:disabled {
+.disabled\:border-gray-200 :disabled {
   --tw-border-opacity: 1;
   border-color: rgb(228 228 231 / var(--tw-border-opacity));
 }
@@ -2945,7 +2945,7 @@ video {
     border-top-width: 1px;
   }
 
-  .dark\:before\:border-gray-200::before {
+  .dark\:before\:border-gray-200 ::before {
     content: var(--tw-content);
     --tw-border-opacity: 1;
     border-color: rgb(228 228 231 / var(--tw-border-opacity));

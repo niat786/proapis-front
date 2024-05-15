@@ -1,20 +1,9 @@
 "use client"
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import "../app.css";
-import { useState } from 'react';
-
 
 
 const faqs = () => {
-
-
-    const [isChecked, setIsChecked] = useState(false);
-
-    const handleToggle = () => {
-        setIsChecked(prevChecked => !prevChecked);
-    };
-
 
     return (
         <>
@@ -55,28 +44,28 @@ const faqs = () => {
 
                                     <div className="mt-8 space-y-8 lg:mt-12">
                                         {/* faq1 */}
-                                        <div className="p-8 bg-gray-100 rounded-lg dark:bg-gray-800"  >
+                                        <div className="p-8 bg-blue-200 rounded-xl shadow-md dark:bg-gray-800"  >
                                             <button className="flex items-center justify-between w-full" >
                                                 <h1 className="font-semibold text-gray-700 dark:text-white">What is ProAPIs?
                                                 </h1>
 
-                                                <span className="text-white bg-primary-500 rounded-full">
-                                                    {/* opened icon */}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" x-show="!open"
+                                                {/* <span className="text-white bg-primary-500 rounded-full">
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 open-icon" x-show="!open"
                                                         fill="none"
                                                         viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2" d="M18 12H6" />
                                                     </svg>
 
-                                                    {/* closed icon */}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 " x-show="open"
+                                             
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 closed-icon" x-show="open"
                                                         fill="none"
                                                         viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                                                     </svg>
-                                                </span>
+                                                </span> */}
                                             </button>
 
                                             <p className="mt-6 text-sm text-gray-500 dark:text-gray-300"
@@ -91,28 +80,28 @@ const faqs = () => {
 
                                         {/* faq2  */}
 
-                                        <div className="p-8 bg-gray-100 rounded-lg dark:bg-gray-800"  >
+                                        <div className="p-8 bg-blue-100 rounded-xl shadow-md dark:bg-gray-800"  >
                                             <button className="flex items-center justify-between w-full" >
                                                 <h1 className="font-semibold text-gray-700 dark:text-white">What subscription
                                                     plans does ProAPIs offer?</h1>
 
-                                                <span className="text-white bg-primary-500 rounded-full">
-                                                    {/* opened icon */}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" x-show="open"
-                                                        fill="none" viewBox="0 0 24 24"
-                                                        stroke="currentColor">
+                                                {/* <span className="text-white bg-primary-500 rounded-full">
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 open-icon" x-show="!open"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2" d="M18 12H6" />
                                                     </svg>
 
-                                                    {/* closed icon */}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 " x-show="!open"
-                                                        fill="none" viewBox="0 0 24 24"
-                                                        stroke="currentColor">
+                                             
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 closed-icon" x-show="open"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                                                     </svg>
-                                                </span>
+                                                </span> */}
                                             </button>
 
                                             <p className="mt-6 text-sm text-gray-500 dark:text-gray-300" x-show="open">
@@ -127,28 +116,28 @@ const faqs = () => {
 
                                         {/* faq3  */}
 
-                                        <div className="p-8 bg-gray-100 rounded-lg dark:bg-gray-800"  >
+                                        <div className="p-8 bg-blue-100 rounded-xl shadow-md dark:bg-gray-800"  >
                                             <button className="flex items-center justify-between w-full" >
                                                 <h1 className="font-semibold text-gray-700 dark:text-white">Can I use ProAPIs on
                                                     a pay-as-you-go basis?</h1>
 
-                                                <span className="text-white bg-primary-500 rounded-full">
-                                                    {/* opened icon */}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" x-show="open"
-                                                        fill="none" viewBox="0 0 24 24"
-                                                        stroke="currentColor">
+                                                {/* <span className="text-white bg-primary-500 rounded-full">
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 open-icon" x-show="!open"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2" d="M18 12H6" />
                                                     </svg>
 
-                                                    {/* closed icon */}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 " x-show="!open"
-                                                        fill="none" viewBox="0 0 24 24"
-                                                        stroke="currentColor">
+                                             
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 closed-icon" x-show="open"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                                                     </svg>
-                                                </span>
+                                                </span> */}
                                             </button>
 
                                             <p className="mt-6 text-sm text-gray-500 dark:text-gray-300" x-show="open">
@@ -163,28 +152,28 @@ const faqs = () => {
 
                                         {/* faq4  */}
 
-                                        <div className="p-8 bg-gray-100 rounded-lg dark:bg-gray-800"  >
+                                        <div className="p-8 bg-blue-100 rounded-xl shadow-md dark:bg-gray-800"  >
                                             <button className="flex items-center justify-between w-full">
                                                 <h1 className="font-semibold text-gray-700 dark:text-white">How far can I scale
                                                     with your service?</h1>
 
-                                                <span className="text-white bg-primary-500 rounded-full">
-                                                    {/* opened icon */}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" x-show="open"
-                                                        fill="none" viewBox="0 0 24 24"
-                                                        stroke="currentColor">
+                                                {/* <span className="text-white bg-primary-500 rounded-full">
+                                                    
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 open-icon" x-show="!open"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2" d="M18 12H6" />
                                                     </svg>
 
-                                                    {/* closed icon */}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 " x-show="!open"
-                                                        fill="none" viewBox="0 0 24 24"
-                                                        stroke="currentColor">
+                                             
+                                                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 closed-icon" x-show="open"
+                                                        fill="none"
+                                                        viewBox="0 0 24 24" stroke="currentColor">
                                                         <path stroke-linecap="round" stroke-linejoin="round"
                                                             stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                                                     </svg>
-                                                </span>
+                                                </span> */}
                                             </button>
 
                                             <p className="mt-6 text-sm text-gray-500 dark:text-gray-300" x-show="open">
@@ -192,7 +181,8 @@ const faqs = () => {
                                                 hundreds of millions of API calls each month, and for those with very high
                                                 volume usage, we offer attractive discounts. We encourage customers to get
                                                 in touch with our support team to discuss their specific needs and find the
-                                                most suitable pricing solution.</p> {/* faq4 ends*/}
+                                                most suitable pricing solution.</p> 
+                                                {/* faq4 ends*/}
 
                                         </div>
 

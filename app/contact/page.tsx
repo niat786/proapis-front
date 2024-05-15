@@ -1,8 +1,6 @@
 "use client"
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import "../app.css";
-
 
 
 const contact = () => {
@@ -46,7 +44,7 @@ const contact = () => {
                                                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                                                 Name</label>
                                             <input type="text" id="username"
-                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                                 required />
                                         </div>
                                         <div className="mb-5">
@@ -54,14 +52,14 @@ const contact = () => {
                                                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                                                 Email</label>
                                             <input type="email" id="email"
-                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                                 required />
                                         </div>
                                         <div className="mb-5">
                                             <label htmlFor="subject"
                                                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Subject</label>
                                             <input type="text" id="subject"
-                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                                 required />
                                         </div>
 
@@ -69,7 +67,7 @@ const contact = () => {
                                             <label htmlFor="message"
                                                 className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Message</label>
                                             <textarea rows={6} id="message"
-                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
+                                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                                 required></textarea>
                                         </div>
 
@@ -85,7 +83,7 @@ const contact = () => {
                                                     and conditions</a></label>
                                         </div>
                                         <button
-                                            className="px-10 py-3 bg-[#2196f3] shadow shadow-primary-500/20 text-white rounded-lg"
+                                            className="px-10 py-3 bg-[#2196f3] shadow shadow-primary-500/20 text-white rounded-xl"
                                             type="submit"> send message</button>
                                     </form>
 
@@ -106,7 +104,7 @@ const contact = () => {
                                     <div className="">
                                         <h3 className="text-xl font-semibold">Reach Out via Email</h3>
                                         <p> Get a rapid response! Reach out to us via email at</p>
-                                        <p className="text-primary-600 dark:text-primary-500">sales@iscraper.io</p>
+                                        <p className="text-blue-500 dark:text-blue-400">sales@iscraper.io</p>
                                     </div>
                                 </div>
                             </div>
