@@ -42,7 +42,7 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ initialServices = [] }) => 
       {loading ? (
         <>
         {[1, 2, 3].map((index) => (
-            <div  className="relative group overflow-hidden p-10 rounded-3xl bg-white border border-gray-300 dark:border-gray-600 dark:bg-gray-950 animate-pulse">
+            <div key={index}   className="relative group overflow-hidden p-10 rounded-3xl bg-white border border-gray-300 dark:border-gray-600 dark:bg-gray-950 animate-pulse">
                 <div aria-hidden="true" className="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-info-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10"></div>
                 <div className="relative">
                     <div className="border border-info-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-full dark:bg-gray-900 dark:border-white/15 before:rounded-full before:absolute before:inset-0 before:border-t before:border-white before:from-info-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
