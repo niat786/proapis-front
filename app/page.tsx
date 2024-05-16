@@ -2,14 +2,15 @@
 import "./custom-css.css";
 
 import { useEffect } from 'react';
-import Swiper from 'swiper/bundle';
-import { Pagination } from 'swiper/modules';
+// import Swiper from 'swiper/bundle';
+// import { Pagination } from 'swiper/modules';
 // import 'swiper/css/bundle';
 // import 'swiper/css/pagination';
 // import 'swiper/css/effect-cards';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Image from 'next/image';
+import Services from '..//pages/services';
 
 export default function Home() {
   useEffect(() => {
@@ -447,106 +448,13 @@ if response.status == 200 {
                         <p className="mt-6 text-gray-700 dark:text-gray-300">We offer unparalleled access to high-quality
                             data sources around the web.</p>
                     </div>
-                    <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                        <div
-                            className="relative group overflow-hidden p-10 rounded-3xl bg-white border border-gray-300  dark:border-gray-600 dark:bg-gray-950">
-                            <div aria-hidden="true"
-                                className="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-[#2196f3] to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10">
-                            </div>
-                            <div className="relative">
-                                <div
-                                    className="border border-[#2196f3]/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-full dark:bg-gray-900 dark:border-white/15 before:rounded-full before:absolute before:inset-0 before:border-t before:border-white before:from-primary-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
-                                    <svg viewBox="0 0 24 24" id="meteor-icon-kit__regular-google" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <g clipPath="url(#clip0_1292_3949)">
-                                                <g clipPath="url(#clip1_1292_3949)">
-                                                    <path fillRule="evenodd" clipRule="evenodd"
-                                                        d="M12.255 4.75C14.025 4.75 15.605 5.36 16.855 6.55L20.275 3.13C18.205 1.19 15.495 0 12.255 0C7.56498 0 3.51498 2.7 1.54498 6.62L1.545 6.62001C0.725001 8.24001 0.255005 10.06 0.255005 12C0.255005 13.94 0.724996 15.76 1.54498 17.38V17.38C3.51498 21.3 7.56498 24 12.255 24C15.495 24 18.205 22.92 20.185 21.09L20.185 21.09C22.445 19 23.745 15.92 23.745 12.27C23.745 11.48 23.675 10.73 23.555 10H12.255V14.51H18.725C18.435 15.99 17.585 17.24 16.325 18.09L16.325 18.09C15.245 18.81 13.875 19.25 12.255 19.25C9.12498 19.25 6.47498 17.14 5.52498 14.29L5.52501 14.29C5.27501 13.57 5.145 12.8 5.145 12C5.145 11.2 5.28501 10.43 5.52501 9.71V9.70994C6.47502 6.85997 9.12501 4.75 12.255 4.75Z"
-                                                        fill="currentColor"></path>
-                                                </g>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_1292_3949">
-                                                    <rect width="24" height="24" fill="currentColor"></rect>
-                                                </clipPath>
-                                                <clipPath id="clip1_1292_3949">
-                                                    <rect width="24" height="24" fill="currentColor"></rect>
-                                                </clipPath>
-                                            </defs>
-                                        </g>
-                                    </svg>
-                                </div>
-                                <div className="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                    <p className="text-gray-700 dark:text-gray-300">Blazing fast, highly reliable, and
-                                        sclable real time Google search API.</p>
-                                </div>
-                                <div
-                                    className="flex gap-3 -mb-10 py-4 border-t border-gray-300  dark:border-gray-600">
-                                    <a href="#" download="/"
-                                        className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>Sample Data</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                            viewBox="0 0 24 24">
-                                            <path fill="none" stroke="currentColor" strokeLinecap="round"
-                                                strokeLinejoin="round" strokeWidth="2"
-                                                d="m17 13l-5 5m0 0l-5-5m5 5V6" />
-                                        </svg>
-                                    </a>
-                                    <a href="#" download="/"
-                                        className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div
-                            className="relative group overflow-hidden p-10 rounded-3xl bg-white border border-gray-300  dark:border-gray-600 dark:bg-gray-950">
-                            <div aria-hidden="true"
-                                className="inset-0 absolute aspect-video border rounded-full -translate-y-1/2 group-hover:-translate-y-1/4 duration-300 bg-gradient-to-b from-info-500 to-white dark:from-white dark:to-white blur-2xl opacity-25 dark:opacity-5 dark:group-hover:opacity-10">
-                            </div>
-                            <div className="relative">
-                                <div
-                                    className="border border-info-500/10 flex relative *:relative *:size-6 *:m-auto size-12 rounded-full dark:bg-gray-900 dark:border-white/15 before:rounded-full before:absolute before:inset-0 before:border-t before:border-white before:from-info-100 dark:before:border-white/20 before:bg-gradient-to-b dark:before:from-white/10 dark:before:to-transparent before:shadow dark:before:shadow-gray-950">
-                                    <svg fill="currentColor" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg">
-                                        <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                                        <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round">
-                                        </g>
-                                        <g id="SVGRepo_iconCarrier">
-                                            <path
-                                                d="M478.234 600.75V1920H.036V600.75h478.198Zm720.853-2.438v77.737c69.807-45.056 150.308-71.249 272.38-71.249 397.577 0 448.521 308.666 448.521 577.562v737.602h-480.6v-700.836c0-117.867-42.173-140.215-120.15-140.215-74.134 0-120.151 23.55-120.151 140.215v700.836h-480.6V598.312h480.6ZM239.099 0c131.925 0 239.099 107.294 239.099 239.099s-107.174 239.099-239.1 239.099C107.295 478.198 0 370.904 0 239.098 0 107.295 107.294 0 239.099 0Z"
-                                                fillRule="evenodd"></path>
-                                        </g>
-                                    </svg>
-                                </div>
+                
+                       {/* services start */}
 
-                                <div className="mt-6 pb-6 rounded-b-[--card-border-radius]">
-                                    <p className="text-gray-700 dark:text-gray-300">Highly reliable, fast, and scalable real
-                                        time LinkedIn data API.</p>
-                                </div>
-                                <div
-                                    className="flex gap-3 -mb-10 py-4 border-t border-gray-300  dark:border-gray-600">
-                                    <a href="#" download="/"
-                                        className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>Sample Data</span>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                            viewBox="0 0 24 24">
-                                            <path fill="none" stroke="currentColor" strokeLinecap="round"
-                                                strokeLinejoin="round" strokeWidth="2"
-                                                d="m17 13l-5 5m0 0l-5-5m5 5V6" />
-                                        </svg>
-                                    </a>
-                                    <a href="#" download="/"
-                                        className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-300   disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 bg-gray-100 hover:bg-gray-200/75 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center">
-                                        <span>View Details</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                       <Services></Services>
+                       {/* services end */}
+                       
+                 
                 </div>
             </div>
         </section>
