@@ -34,7 +34,7 @@ const ServicesPage: React.FC<ServicesPageProps> = ({ initialServices = [] }) => 
     } else {
       setLoading(false);
     }
-  }, [initialServices]);
+  }, []);
 
   return (
     <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
